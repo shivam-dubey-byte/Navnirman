@@ -1,0 +1,11 @@
+runtime: python39  # Replace with your desired Python version
+
+env: flex  # Optional: Use 'standard' for the standard environment
+
+service: navnirman  # Replace with your application name
+
+instance_class: F1  # Optional: Specify instance machine type
+
+handlers:
+- url: /  # Matches the root path
+  script: app.py  # Replace with your main Flask application file
