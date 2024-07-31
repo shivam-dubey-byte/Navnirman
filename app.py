@@ -2,8 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='afasdfasdfadfasdfad#'
-def start_app():
-    return app
+
 @app.route("/")
 def index():
     return render_template('home.html',home='active',about='',contact='',donate="")
@@ -30,5 +29,6 @@ def donate():
 @app.route("/donate1")
 def donate1():
     return render_template("donate1.html",home='',about='',contact='',donate="active")
-
+def start_app():
+    return app
 
