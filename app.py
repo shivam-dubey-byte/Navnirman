@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
+
 app.config['SECRET_KEY']='afasdfasdfadfasdfad#'
 
 @app.route("/")
@@ -29,6 +30,6 @@ def donate():
 @app.route("/donate1")
 def donate1():
     return render_template("donate1.html",home='',about='',contact='',donate="active")
-def start_app():
-    return app
 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=False)
