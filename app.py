@@ -8,7 +8,7 @@ def index():
 
 @app.route("/1")
 def index1():
-    return render_template('index.html',home='active',about='',blog='',contact='',donate="")
+    return render_template('Home.html',home='active',about='',blog='',contact='',donate="")
 @app.route("/about")
 def about1():
     return render_template('AboutUs.html',home='',about='active',donate="")
