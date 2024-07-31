@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT wsgi:app
+web: source myenv/Scripts/activate && waitress-serve --port=$PORT wsgi:app
