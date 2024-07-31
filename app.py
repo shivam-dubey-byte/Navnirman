@@ -32,4 +32,4 @@ def donate1():
     return render_template("donate1.html",home='',about='',contact='',donate="active")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=False)
+    app.run()
